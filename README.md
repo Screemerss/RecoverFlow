@@ -1,46 +1,46 @@
 # RecoverFlow: Windows File Rescue
 
-![RecoverFlow](background.png)
+![RecoverFlow](https://raw.githubusercontent.com/Screemerss/RecoverFlow/main/background.png)
 
-Un'applicazione open-source semplice e intuitiva, scritta in Python e Qt (PySide6), per recuperare file cancellati da dischi formattati o danneggiati.
+A simple and intuitive open-source application, written in Python and Qt (PySide6), to recover deleted files from formatted or damaged drives.
 
-## Funzionalità
+## Features
 
-- **Interfaccia Grafica Semplice:** Una schermata di avvio accattivante e un pannello di controllo chiaro.
-- **Rilevamento Automatico dei Dischi:** Trova automaticamente i dischi fisici disponibili sul sistema.
-- **Recupero Basato su Firme (File Carving):** Cerca e recupera tipi di file comuni, tra cui:
-  - **Immagini:** JPG, PNG
-  - **Documenti:** PDF, DOC, DOCX
+- **Simple Graphical Interface:** An attractive splash screen and a clear control panel.
+- **Automatic Drive Detection:** Automatically finds available physical drives on the system.
+- **Signature-Based Recovery (File Carving):** Scans and recovers common file types, including:
+  - **Images:** JPG, PNG
+  - **Documents:** PDF, DOC, DOCX
   - **Audio/Video:** MP3, WAV, MP4
-- **Barra di Progresso:** Tieni traccia dello stato di avanzamento della scansione in tempo reale.
-- **Cross-Platform (Teorico):** Scritto per funzionare su Windows, Linux e macOS (richiede privilegi di amministratore/root).
+- **Progress Bar:** Track the scan's progress in real-time.
+- **Cross-Platform (in theory):** Written to run on Windows, Linux, and macOS (requires administrator/root privileges).
 
 ---
 
-## ⚠️ ATTENZIONE: Avviso Importante ⚠️
+## ⚠️ WARNING: Important Notice ⚠️
 
-L'uso di strumenti di recupero dati può essere rischioso. Per massimizzare le possibilità di successo e non causare ulteriori danni:
+Using data recovery tools can be risky. To maximize your chances of success and avoid causing further damage:
 
-- **NON salvare i file recuperati sullo stesso disco che stai analizzando!** Salvali sempre su un'altra unità (es. una chiavetta USB o un hard disk esterno).
-- **USARE A PROPRIO RISCHIO:** Questo software è fornito "così com'è". Non mi assumo alcuna responsabilità per eventuali perdite di dati o danni al sistema derivanti dal suo utilizzo.
+- **DO NOT save recovered files to the same drive you are scanning!** Always save them to another drive (e.g., a USB stick or an external hard drive).
+- **USE AT YOUR OWN RISK:** This software is provided "as is". I assume no responsibility for any data loss or system damage resulting from the use of this software.
 
 ---
 
-## Come si Usa (per Utenti Windows)
+## How to Use (for Windows Users)
 
-1.  Scarica l'ultimo file `RecoverFlow.exe` dalla sezione Releases di GitHub.
-2.  Fai doppio clic su `RecoverFlow.exe`. Windows chiederà i permessi di amministratore (necessari per la scansione dei dischi).
-3.  Clicca su "AVVIA SCANSIONE".
-4.  Nel pannello di recupero:
-    - Seleziona il disco da analizzare.
-    - Scegli una cartella di destinazione **su un disco diverso**.
-    - Avvia la scansione e attendi.
+1.  Download the latest `RecoverFlow.exe` file from the Releases section on GitHub.
+2.  Double-click `RecoverFlow.exe`. Windows will ask for administrator permissions (this is necessary to scan drives).
+3.  Click "AVVIA SCANSIONE" to start.
+4.  In the recovery panel:
+    - Select the drive to scan.
+    - Choose an output folder on a **different drive**.
+    - Start the scan and wait.
 
-## Installazione da Codice Sorgente (per Sviluppatori)
+## Building from Source (for Developers)
 
-Per eseguire lo script Python direttamente, hai bisogno di:
+To run the Python script directly, you will need:
 - Python 3.x
-- Le seguenti librerie, installabili con `pip`:
+- The following libraries, installable with `pip`:
   ```bash
   pip install PySide6 WMI
   ```
